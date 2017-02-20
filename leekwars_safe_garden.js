@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [Leek Wars] Safe Garden
 // @namespace    http://tampermonkey.net/
-// @version      0.15
+// @version      1.00
 // @description  Allow you to launch friendly fights from the garden 
 // @author       Alpacah
 // @match        *://*.leekwars.com/*
@@ -22,8 +22,7 @@
             url: "https://leekwars.com/api/garden/start-solo-challenge",
             data: "leek_id=" + localStorage["garden/leek"] + "&target_id=" + id + "&token=%24",
             success: function(data){ 
-                document.getElementsByClassName("versus")[0].innerHTML = "<a href=\"https://leekwars.com/report/" + JSON.parse(data).fight + "\" target=\"_blank\">Voir le résultat</a>";
-                //window.open("https://leekwars.com/report/" + JSON.parse(data).fight);
+                window.open("https://leekwars.com/report/" + JSON.parse(data).fight);
             }
         });
     }
