@@ -34,6 +34,7 @@
         document.getElementsByClassName("versus")[0].innerHTML = data.replace(/<div class="image">[.*]<\/div>/g, "");
         var id = $(this).attr('leek');
         document.getElementsByClassName("versus")[0].onclick = function(){
+            document.getElementsByClassName("versus")[0].innerHTML = "";
             launch(id);
         };
     });
