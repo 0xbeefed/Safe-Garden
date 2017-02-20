@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [Leek Wars] Safe Garden
 // @namespace    http://tampermonkey.net/
-// @version      0.12
+// @version      0.15
 // @description  Allow you to launch friendly fights from the garden 
 // @author       Alpacah
 // @match        *://*.leekwars.com/*
